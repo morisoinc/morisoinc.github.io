@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moriso IT Solutions</title>
+    <meta name="description"
+        content="Moriso IT Solutions — Software development and digital solutions for education and healthcare professionals.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #F7F5F0;
+            --text: #1A1A18;
+            --text-muted: #6B6962;
+            --accent: #2C5F4B;
+            --accent-light: #E8F0EB;
+            --rule: #D6D2C9;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem 1.5rem;
+        }
+
+        .card {
+            max-width: 620px;
+            width: 100%;
+            animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+        }
+
+        @keyframes rise {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo-mark {
+            width: 48px;
+            height: 48px;
+            background: var(--accent);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-family: 'Instrument Serif', serif;
+            font-size: 26px;
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-family: 'Instrument Serif', serif;
+            font-weight: 400;
+            font-size: clamp(2rem, 5vw, 2.75rem);
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.35em;
+        }
+
+        .tagline {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+            max-width: 500px;
+            margin-bottom: 2.5rem;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--rule);
+            margin-bottom: 2rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.75rem;
+        }
+
+        @media (max-width: 480px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+        }
+
+        .info-block label {
+            display: block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 0.4rem;
+        }
+
+        .info-block p,
+        .info-block a {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: var(--text);
+        }
+
+        .info-block a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .info-block a:hover {
+            border-color: var(--accent);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.78rem;
+            color: var(--text-muted);
+            letter-spacing: 0.02em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="page">
+        <div class="card">
+            <div class="logo-mark">M</div>
+            <h1>Moriso IT Solutions</h1>
+            <p class="tagline">Software development and digital solutions for education and finance.</p>
+
+            <hr class="divider">
+
+            <div class="info-grid">
+                <div class="info-block">
+                    <label>Services</label>
+                    <p>SaaS Applications<br>Web &amp; Mobile Development<br>Cloud Infrastructure</p>
+                </div>
+                <div class="info-block">
+                    <label>Contact</label>
+                    <a href="mailto:contact@morisoit.com">moriso.inc@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Moriso IT Solutions. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
